@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import PersonalPage from './PersonalPage.jsx';
 
 const slides = [
   { id: 1, label: 'Photo placeholder 01' },
@@ -485,7 +486,7 @@ export default function App() {
       <Header theme={theme} onThemeChange={setTheme} page={page} />
       {page === 'home' && <HomePage />}
       {page === 'professional' && <ProfessionalPage />}
-      {page === 'personal' && <ComingSoonPage section="personal" />}
+      {page === 'personal' && <PersonalPage />}
       <Footer />
     </div>
   );
